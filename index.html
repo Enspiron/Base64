@@ -84,6 +84,8 @@
             console.log(atob(link));
             if(validURL(atob(link))){
                 window.location = atob(link);
+            }else{
+                result.innerHTML = convertLinks(atob(link)); 
             }
 
         }
